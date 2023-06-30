@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width">
+    <title>Fast Drive</title>
+    <lint herf="style.css" rel="stylesheet">
+    <style>
+      .nav{
+      height: 100px;
+      border-bottom: 1px solid rgba(56, 56, 56, 0.452);
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      }
+
+      .nav-right-items{
+      display: flex;
+      margin-left: auto;
+      border: 1px soild black;
+      list-style: none;
+      }
+
+      .nav-item{
+        margin-left: 10px;
+      }
+
+      .company-name {
+        margin-left: 20px;
+      }
+
+      .title{
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+        
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+      .main {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+      }
+      
+      .prices {
+        display: flex;
+      }
+      .price-item {
+        width: 300px;
+        height: 350px;
+        border: 1px solid black;
+        margin: 20px;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .price-item-title {
+        font-size: 1.5rem;
+        background-color: rgba(0,0,0,.2);
+        text-align: center;
+        height: 53px;
+        line-height: 53px;
+        border-bottom: 1px solid black;
+      }
+
+      .price-item-price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+
+      .price-item-button {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+        color: #007bff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #007bff;
+        margin-top: 30px;
+      }
+
+      .price-item-button--active {
+        background-color: #007bff;
+        color: white;
+      }
+      .box{
+        transition: 2s ease;
+      }
+      .box:hover{
+        transform: rotate(9000deg);
+        width: 150px;
+        height: 150px;
+      }
+      h1{
+        font-style: italic;
+        font-size: 70px;
+        margin-left: 20px;
+        text-shadow: -5px 1px 10px rgb(126, 126, 126);
+      }
+      span{
+        color: rgb(202, 38, 38);
+      }
+  </style>
+  </head>
+<body>
+  <div class="nav">
+    <div class="box">
+      <img src="images/FastDrive.png" width="100">
+    </div>
+      <h1><span>Fast</span> Drive</h1>
+    <div class="nav-right-items">
+     <li><a href="#">메뉴1</a></li>
+     <div class="nav-item">메뉴2</div>
+     <div class="nav-item">메뉴3</div>
+     <div class="nav-item">메뉴4</div>
+
+    </div>
+  </div>
+  <div class="main">
+    <div class="title">
+      Pricing
+    </div>
+    <div class="subtitle">
+      Access my content easily and securely. Save, share, and collaborate on your mobile devices, tablets, and computers. Drive provides secure, encrypted access to your files. Files shared with me are automatically scanned and deleted if malware, spam, ransomware, or phishing is detected.
+    </div>
+    <div class="prices">
+      <div class="price-item">
+       <div class="price-item-title">
+       Basic
+       </div>
+      <div class="price-item-price">
+        $0 / mo
+      </div>
+      <div class="price-item-deatail">
+        10 users included
+     </div>
+      <div class="price-item-deatail">
+        2 GB of storage
+     </div>
+      <div class="price-item-deatail">
+        Email support
+     </div>
+      <div class="price-item-deatail">
+        Help center access
+     </div>
+      <button class="price-item-button ">
+        Sign up for free
+      </button>
+    </div>
+    <div class="price-item">
+      <div class="price-item-title">
+      Advanced
+      </div>
+      <div class="price-item-price">
+        $12 / mo
+      </div>
+      <div class="price-item-deatail">
+      30 users included
+     </div>
+      <div class="price-item-deatail">
+      10 TB of storage
+     </div>
+      <div class="price-item-deatail">
+      Priority email support
+     </div>
+      <div class="price-item-deatail">
+      Help center access
+     </div>
+      <button class="price-item-button price-item-button--active">
+        Get started
+      </button>
+    </div>
+    <div class="price-item">
+      <div class="price-item-title">
+      Enterprise
+      </div>
+      <div class="price-item-price">
+        $50 / mo
+      </div>
+      <div class="price-item-deatail">
+      100 users included
+     </div>
+      <div class="price-item-deatail">
+      150 TB of storage
+     </div>
+      <div class="price-item-deatail">
+      Phone and email support
+     </div>
+      <div class="price-item-deatail">
+      Help center access
+     </div>
+      <button class="price-item-button price-item-button--active">
+      Click me
+      </button>
+    </div>   
+    </div></div>
+  <script src="srcipt.js"></script>
+  </body>
+</html>
+
