@@ -6,7 +6,7 @@
     <title>Fast Drive</title>
     <lint herf="style.css" rel="stylesheet">
     <style>
-      .nav{
+      .nav {
       height: 100px;
       border-bottom: 1px solid rgba(56, 56, 56, 0.452);
       display: flex;
@@ -14,14 +14,14 @@
       margin: 20px;
       }
 
-      .nav-right-items{
+      .nav-right-items {
       display: flex;
       margin-left: auto;
       border: 1px soild black;
       list-style: none;
       }
 
-      .nav-item{
+      .nav-item {
         margin-left: 10px;
       }
 
@@ -29,7 +29,7 @@
         margin-left: 20px;
       }
 
-      .title{
+      .title {
         text-align: center;
         font-size: 3.5rem;
         font-weight: bold;
@@ -83,6 +83,7 @@
         background-color: transparent;
         background-image: none;
         border-color: #007bff;
+        box-shadow: 0.08rem 0.08rem #007bff;
         margin-top: 30px;
       }
 
@@ -90,29 +91,33 @@
         background-color: #007bff;
         color: white;
       }
-      .box{
+      .box {
         transition: 2s ease;
       }
-      .box:hover{
+      .box:hover {
         transform: rotate(9000deg);
         width: 150px;
         height: 150px;
       }
-      h1{
+      h1 {
         font-style: italic;
-        font-size: 70px;
+        font-size: 4rem;
         margin-left: 20px;
-        text-shadow: -5px 1px 10px rgb(126, 126, 126);
+        text-shadow: -5px 1px 10px rgb(100, 100, 100);
       }
-      span{
+      span {
         color: rgb(202, 38, 38);
+      }
+      span-month {
+        font-size: 1.5rem;
+        color: rgb(100, 100, 100);
       }
   </style>
   </head>
 <body>
   <div class="nav">
     <div class="box">
-      <img src="images/FastDrive.png" width="100">
+      <img src="images/FastDrive.png" width="100px">
     </div>
       <h1><span>Fast</span> Drive</h1>
     <div class="nav-right-items">
@@ -136,7 +141,7 @@
        Basic
        </div>
       <div class="price-item-price">
-        $0 / mo
+        $0 /<span-month> month</span-month>
       </div>
       <div class="price-item-deatail">
         10 users included
@@ -159,7 +164,7 @@
       Advanced
       </div>
       <div class="price-item-price">
-        $12 / mo
+        $12 /<span-month> month</span-month>
       </div>
       <div class="price-item-deatail">
       30 users included
@@ -182,7 +187,7 @@
       Enterprise
       </div>
       <div class="price-item-price">
-        $50 / mo
+        $50 /<span-month> month</span-month>
       </div>
       <div class="price-item-deatail">
       100 users included
